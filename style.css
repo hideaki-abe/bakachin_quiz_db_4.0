@@ -1,0 +1,186 @@
+/* 全体 */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+    background-image: url(./img/bakachin_face.png);
+    background-color: rgba(255, 255, 255, 0.9);
+    background-blend-mode: lighten;
+    font-size: 20px;
+}
+
+h1 {
+    font-family: "Nico Moji", 'M PLUS Rounded 1c', sans-serif, 'Monomaniac One', sans-serif;
+    text-shadow: 1px 1px 0 white, 2px 2px 0 #000;
+    margin-bottom: 0px;
+}
+
+h1 span {
+    color: red;
+    text-shadow: 1px 1px 0 #fff, 2px 2px 0 #000;
+}
+
+h2 {
+    color: blue;
+    font-weight: bold;
+    text-align: center;
+    font-size: 27px;
+    text-shadow: 1px 1px 0 white, 1px 1.5px 0 #000;
+}
+
+form {
+    font-size: 16px;
+}
+
+/* コンテナ */
+.form-container,
+.quiz-container,
+.ranking-container {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    margin: 20px;
+}
+
+/* 入力フィールド */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #5C67F2;
+    outline: none;
+}
+
+/* ボタン */
+button {
+    width: 100%;
+    background-color: #5C67F2;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: red;
+}
+
+/* リスト＆ラベル */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 12px;
+}
+
+label {
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* ラジオボタン */
+input[type="radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* ログアウトリンク */
+.logout-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #5C67F2;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logout-button:hover {
+    background-color: gray;
+}
+
+/* 削除リンク */
+.delete-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #5C67F2;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: gray;
+}
+
+/* ランキングリンク */
+.ranking-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #5C67F2;
+    text-decoration: none;
+}
+
+.ranking-link:hover {
+    text-decoration: underline;
+}
+
+/* テーブル */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th,
+table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 12px;
+}
+
+table th {
+    background-color: #f4f4f4;
+}
